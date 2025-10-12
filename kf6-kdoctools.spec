@@ -4,18 +4,18 @@
 # TODO:
 # - runtime Requires if any
 # - package manual pages
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kdoctools
 
 Summary:	Create documentation from DocBook
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	b8bc6a3b48617a8c6d6a40348f3c74e0
+# Source0-md5:	9870b9d52e400ab016663769c427289a
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16
@@ -97,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/checkXML6
 %attr(755,root,root) %{_bindir}/meinproc6
 %ghost %{_libdir}/libKF6DocTools.so.6
-%attr(755,root,root) %{_libdir}/libKF6DocTools.so.*.*
+%{_libdir}/libKF6DocTools.so.*.*
 %{_docdir}/HTML/*/kdoctools6-common
 %dir %{_datadir}/kf6/kdoctools
 %{_datadir}/kf6/kdoctools/customization
