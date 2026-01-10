@@ -4,18 +4,18 @@
 # TODO:
 # - runtime Requires if any
 # - package manual pages
-%define		kdeframever	6.21
+%define		kdeframever	6.22
 %define		qtver		5.15.2
 %define		kfname		kdoctools
 
 Summary:	Create documentation from DocBook
 Name:		kf6-%{kfname}
-Version:	6.21.0
+Version:	6.22.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	b18f25765bc37d417f55441fe15fb8d2
+# Source0-md5:	a487d460a8c714a55cee4be034859964
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16
@@ -109,6 +109,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/ca/man1/meinproc6.1*
 %{_mandir}/ca/man7/kf6options.7*
 %{_mandir}/ca/man7/qt6options.7*
+%{_mandir}/ca@valencia/man1/checkXML6.1*
+%{_mandir}/ca@valencia/man1/meinproc6.1*
+%{_mandir}/ca@valencia/man7/kf6options.7*
+%{_mandir}/ca@valencia/man7/qt6options.7*
 %{_mandir}/es/man1/checkXML6.1*
 %{_mandir}/es/man7/kf6options.7*
 %{_mandir}/es/man1/meinproc6.1*
@@ -121,6 +125,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/nl/man1/meinproc6.1*
 %{_mandir}/nl/man7/kf6options.7*
 %{_mandir}/nl/man7/qt6options.7*
+%{_mandir}/pt_BR/man1/checkXML6.1*
+%{_mandir}/pt_BR/man1/meinproc6.1*
+%{_mandir}/pt_BR/man7/kf6options.7*
+%{_mandir}/pt_BR/man7/qt6options.7*
 %{_mandir}/sl/man1/checkXML6.1*
 %{_mandir}/sl/man1/meinproc6.1*
 %{_mandir}/sl/man7/kf6options.7*
