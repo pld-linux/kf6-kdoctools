@@ -48,6 +48,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Provides tools to generate documentation in various format from
 DocBook files.
 
+%description -l pl.UTF-8
+Dostarcza narzędzi do generowania dokumentacji w różnych formatach z
+plików DocBook.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
