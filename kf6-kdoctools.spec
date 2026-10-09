@@ -4,18 +4,18 @@
 # TODO:
 # - runtime Requires if any
 # - package manual pages
-%define		kdeframever	6.30
+%define		kdeframever	6.31
 %define		qtver		5.15.2
 %define		kfname		kdoctools
 
 Summary:	Create documentation from DocBook
 Name:		kf6-%{kfname}
-Version:	6.30.0
+Version:	6.31.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	10885ef855cc14c61cdfdd67771eac7f
+# Source0-md5:	5240f8057f1c8069fbe8324fc74953be
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16
@@ -133,6 +133,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/pt_BR/man1/meinproc6.1*
 %{_mandir}/pt_BR/man7/kf6options.7*
 %{_mandir}/pt_BR/man7/qt6options.7*
+%{_mandir}/ru/man1/checkXML6.1*
+%{_mandir}/ru/man1/meinproc6.1*
+%{_mandir}/ru/man7/kf6options.7*
+%{_mandir}/ru/man7/qt6options.7*
 %{_mandir}/sl/man1/checkXML6.1*
 %{_mandir}/sl/man1/meinproc6.1*
 %{_mandir}/sl/man7/kf6options.7*
